@@ -52,6 +52,29 @@ We analyze how oil market conditions change during different geopolitical period
 
 ---
 
+## Visualizations
+
+The notebooks generate numerous visualizations showing patterns, predictions, and risk assessments. Here are a few examples:
+
+### Feature Patterns Over Time
+![Feature Visualization](images/data1.png)
+*Time series showing how market features (spread, volatility, returns) change across different geopolitical periods. Background colors indicate different periods (Normal, Pre-War, War, Post-War).*
+
+### Model Feature Importance
+![Feature Importance](images/moadel_feature_importance.png)
+*Random Forest model showing which features are most important for predicting geopolitical periods. Higher values indicate features that drive predictions more.*
+
+**Note**: More visualizations are available in the `images/` folder, including:
+- Scatter plots showing relationships between features
+- PCA visualizations of principal components
+- Risk assessment charts (pre-war probability, Mahalanobis distance, combined risk)
+- Model agreement and trend analyses
+- Comparisons between pre-war periods and current data
+
+All visualizations are automatically generated when you run the notebooks. The notebooks contain many more charts and plots that help understand the data and model predictions.
+
+---
+
 ## Key Concepts and Meanings
 
 ### Risk Indicators Explained
