@@ -61,7 +61,7 @@ The notebooks generate numerous visualizations showing patterns, predictions, an
 *Time series showing how market features (spread, volatility, returns) change across different geopolitical periods. Background colors indicate different periods (Normal, Pre-War, War, Post-War).*
 
 ### Model Feature Importance
-![Feature Importance](images/moadel_feature_importance.png)
+![Feature Importance](images/model_feature_importance.png)
 *Random Forest model showing which features are most important for predicting geopolitical periods. Higher values indicate features that drive predictions more.*
 
 **Note**: More visualizations are available in the `images/` folder, including:
