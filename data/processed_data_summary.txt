@@ -1,0 +1,76 @@
+================================================================================
+PROCESSED DATA SUMMARY
+================================================================================
+
+File: data/processed_features_with_labels.csv
+Shape: 610 rows × 34 columns
+Date range: 2024-02-06 01:00:00+00:00 to 2026-01-23 01:00:00+00:00
+
+COLUMNS INCLUDED:
+--------------------------------------------------------------------------------
+Metadata:
+  - date: Timestamp
+  - WTI_price: WTI crude oil price (USD)
+  - BRENT_price: Brent crude oil price (USD)
+  - label: Geopolitical period label
+
+Raw Features (10):
+  - WTI_price_vol_24h
+  - WTI_price_vol_30d
+  - WTI_price_vol_5d
+  - WTI_return_1d
+  - WTI_return_30d
+  - WTI_return_5d
+  - spread
+  - spread_vol_24h
+  - spread_vol_30d
+  - spread_vol_5d
+
+Rolling Z-Scores (10):
+  - WTI_price_vol_24h_zscore_rolling
+  - WTI_price_vol_30d_zscore_rolling
+  - WTI_price_vol_5d_zscore_rolling
+  - WTI_return_1d_zscore_rolling
+  - WTI_return_30d_zscore_rolling
+  - WTI_return_5d_zscore_rolling
+  - spread_vol_24h_zscore_rolling
+  - spread_vol_30d_zscore_rolling
+  - spread_vol_5d_zscore_rolling
+  - spread_zscore_rolling
+
+Global Z-Scores (10):
+  - WTI_price_vol_24h_zscore_global
+  - WTI_price_vol_30d_zscore_global
+  - WTI_price_vol_5d_zscore_global
+  - WTI_return_1d_zscore_global
+  - WTI_return_30d_zscore_global
+  - WTI_return_5d_zscore_global
+  - spread_vol_24h_zscore_global
+  - spread_vol_30d_zscore_global
+  - spread_vol_5d_zscore_global
+  - spread_zscore_global
+
+================================================================================
+LABEL DISTRIBUTION:
+--------------------------------------------------------------------------------
+  Normal              :    376 (61.64%)
+  Post-War Close      :     51 ( 8.36%)
+  Post-War Late       :     52 ( 8.52%)
+  Pre-War Close       :     51 ( 8.36%)
+  Pre-War Early       :     51 ( 8.36%)
+  Unlabeled           :     19 ( 3.11%)
+  War                 :     10 ( 1.64%)
+
+================================================================================
+USAGE IN OTHER NOTEBOOKS:
+--------------------------------------------------------------------------------
+import pandas as pd
+from pathlib import Path
+
+df = pd.read_csv('data/processed_features_with_labels.csv', parse_dates=['date'])
+
+# Access features:
+# Raw features: df[['spread', 'spread_vol_5d', 'WTI_return_5d', ...]]
+# Rolling z-scores: df[['spread_zscore_rolling', ...]]
+# Global z-scores: df[['spread_zscore_global', ...]]
+# Labels: df['label']
