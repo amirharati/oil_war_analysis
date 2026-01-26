@@ -3,8 +3,8 @@ PROCESSED DATA SUMMARY
 ================================================================================
 
 File: data/processed_features_with_labels.csv
-Shape: 610 rows × 34 columns
-Date range: 2024-02-06 01:00:00+00:00 to 2026-01-23 01:00:00+00:00
+Shape: 1980 rows × 34 columns
+Date range: 2019-02-13 01:00:00+00:00 to 2026-01-26 00:00:00+00:00
 
 COLUMNS INCLUDED:
 --------------------------------------------------------------------------------
@@ -53,13 +53,20 @@ Global Z-Scores (10):
 ================================================================================
 LABEL DISTRIBUTION:
 --------------------------------------------------------------------------------
-  Normal              :    376 (61.64%)
-  Post-War Close      :     51 ( 8.36%)
-  Post-War Late       :     52 ( 8.52%)
-  Pre-War Close       :     51 ( 8.36%)
-  Pre-War Early       :     51 ( 8.36%)
-  Unlabeled           :     19 ( 3.11%)
-  War                 :     10 ( 1.64%)
+  2019-Tension        :    152 ( 7.68%)
+  Israel-Hamas-Pre-War:     84 ( 4.24%)
+  Israel-Hamas-War    :     70 ( 3.54%)
+  Normal              :    252 (12.73%)
+  Normal-COVID        :    430 (21.72%)
+  Normal-Tense        :    406 (20.51%)
+  Post-War Close      :     51 ( 2.58%)
+  Post-War Late       :     52 ( 2.63%)
+  Pre-War Close       :     51 ( 2.58%)
+  Pre-War Early       :     51 ( 2.58%)
+  Russia-Ukraine-Pre-War:    103 ( 5.20%)
+  Russia-Ukraine-War  :    247 (12.47%)
+  Unlabeled           :     21 ( 1.06%)
+  War                 :     10 ( 0.51%)
 
 ================================================================================
 USAGE IN OTHER NOTEBOOKS:
