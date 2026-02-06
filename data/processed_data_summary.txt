@@ -3,8 +3,8 @@ PROCESSED DATA SUMMARY
 ================================================================================
 
 File: data/processed_features_with_labels.csv
-Shape: 1988 rows × 34 columns
-Date range: 2019-02-13 01:00:00+00:00 to 2026-02-04 01:00:00+00:00
+Shape: 1990 rows × 40 columns
+Date range: 2019-02-13 01:00:00+00:00 to 2026-02-06 01:00:00+00:00
 
 COLUMNS INCLUDED:
 --------------------------------------------------------------------------------
@@ -14,7 +14,9 @@ Metadata:
   - BRENT_price: Brent crude oil price (USD)
   - label: Geopolitical period label
 
-Raw Features (10):
+Raw Features (12):
+  - BRENT_abs_change
+  - WTI_abs_change
   - WTI_price_vol_24h
   - WTI_price_vol_30d
   - WTI_price_vol_5d
@@ -26,7 +28,9 @@ Raw Features (10):
   - spread_vol_30d
   - spread_vol_5d
 
-Rolling Z-Scores (10):
+Rolling Z-Scores (12):
+  - BRENT_abs_change_zscore_rolling
+  - WTI_abs_change_zscore_rolling
   - WTI_price_vol_24h_zscore_rolling
   - WTI_price_vol_30d_zscore_rolling
   - WTI_price_vol_5d_zscore_rolling
@@ -38,7 +42,9 @@ Rolling Z-Scores (10):
   - spread_vol_5d_zscore_rolling
   - spread_zscore_rolling
 
-Global Z-Scores (10):
+Global Z-Scores (12):
+  - BRENT_abs_change_zscore_global
+  - WTI_abs_change_zscore_global
   - WTI_price_vol_24h_zscore_global
   - WTI_price_vol_30d_zscore_global
   - WTI_price_vol_5d_zscore_global
@@ -53,19 +59,19 @@ Global Z-Scores (10):
 ================================================================================
 LABEL DISTRIBUTION:
 --------------------------------------------------------------------------------
-  2019-Tension        :    152 ( 7.65%)
-  Israel-Hamas-Pre-War:     84 ( 4.23%)
+  2019-Tension        :    152 ( 7.64%)
+  Israel-Hamas-Pre-War:     84 ( 4.22%)
   Israel-Hamas-War    :     70 ( 3.52%)
-  Normal              :    252 (12.68%)
-  Normal-COVID        :    430 (21.63%)
-  Normal-Tense        :    406 (20.42%)
-  Post-War Close      :     51 ( 2.57%)
-  Post-War Late       :     52 ( 2.62%)
-  Pre-War Close       :     51 ( 2.57%)
-  Pre-War Early       :     51 ( 2.57%)
+  Normal              :    252 (12.66%)
+  Normal-COVID        :    430 (21.61%)
+  Normal-Tense        :    406 (20.40%)
+  Post-War Close      :     51 ( 2.56%)
+  Post-War Late       :     52 ( 2.61%)
+  Pre-War Close       :     51 ( 2.56%)
+  Pre-War Early       :     51 ( 2.56%)
   Russia-Ukraine-Pre-War:    103 ( 5.18%)
-  Russia-Ukraine-War  :    247 (12.42%)
-  Unlabeled           :     29 ( 1.46%)
+  Russia-Ukraine-War  :    247 (12.41%)
+  Unlabeled           :     31 ( 1.56%)
   War                 :     10 ( 0.50%)
 
 ================================================================================
